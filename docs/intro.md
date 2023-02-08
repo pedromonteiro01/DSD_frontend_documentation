@@ -2,22 +2,22 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Visão Geral
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## Âmbito e Objetivo
 
 Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+## Tecnologias
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+### Instruções de configuração e instalação
 
 Generate a new Docusaurus site using the **classic template**.
 
@@ -30,7 +30,6 @@ npm init docusaurus@latest my-website classic
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
 The command also installs all necessary dependencies you need to run Docusaurus.
-
 ## Start your site
 
 Run the development server:

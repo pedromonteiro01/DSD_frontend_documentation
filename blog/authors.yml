@@ -15,3 +15,27 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+
+pedro:
+  name: Pedro Monteiro
+  title: Software Engineer
+  url: https://github.com/pedromonteiro01
+  image_url: https://github.com/slorber.png
+
+jose:
+  name: José Trigo
+  title: Software Engineer
+  url: https://github.com/zepedrotrigo
+  image_url: https://github.com/slorber.png
+
+eduardo:
+  name: Eduardo Fernandes
+  title: Software Engineer
+  url: https://github.com/eduardofernandes11
+  image_url: https://github.com/slorber.png
+
+artur:
+  name: Artur Romão
+  title: Software Engineer
+  url: https://github.com/artur-romao
+  image_url: https://github.com/slorber.png
