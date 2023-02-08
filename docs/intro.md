@@ -4,43 +4,55 @@ sidebar_position: 1
 
 # Visão Geral
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
 ## Âmbito e Objetivo
 
-Get started by **creating a new site**.
+O Sistema de Apoio à Distribuição do Serviço Docente é um projeto que tem como objetivo construir uma plataforma que facilite a realização de um processo complexo e demorado.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Esta plataforma vem para resolver problemas antigos, como complexidade e abstração da tarefa, facilitando este processo com ferramentas que o tornam mais prático e intuitivo para quem o executa.
 
-## Tecnologias
+## Instruções de configuração e instalação
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Para correr este projeto localmente é necessário ter o Docker instalado.
+Para mais informação, https://docs.docker.com/engine/install/ubuntu/
 
-### Instruções de configuração e instalação
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
+Linux
 ```bash
-npm init docusaurus@latest my-website classic
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+MacOS <br></br>
+Visitar https://docs.docker.com/desktop/install/mac-install/ para mais detalhes.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-## Start your site
-
-Run the development server:
-
+Para correr o projeto, abrir um terminal e correr os comandos abaixo
 ```bash
-cd my-website
-npm run start
+cd DSD/project/backend/DsdApi/_DOCKER_CONFIGS/  # caminho para o docker-compose
+
+docker-compose up
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Devem ser adicionados os ficheiros com variáveis de ambiente seguintes. <br></br>
+- No caso do frontend, adicionar .env em DSD/project/frontend/.env
+```bash
+PORT=8080
+REACT_APP_API_URL="http://localhost:5000/v1"
+REACT_APP_WSO2_CLIENT_ID="secrethere"
+REACT_APP_WSO2_CLIENT_SECRET="secrethere"
+REACT_APP_WSO2_REDIRECT_URI="http://localhost"
+```
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+- Para o backend, adicionar .env em DSD/project/backend/DsdApi/.env
+```bash
+ASPNETCORE_ENVIRONMENT=Development
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Tecnologias
+- Frontend
+  - React 17.0.2:
+  - TypeScript 4.7.4
+
+- Backend
+  - ASP.NET Core 6
+  - SQL Server
+  - Docker
