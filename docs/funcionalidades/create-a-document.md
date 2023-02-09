@@ -3,55 +3,16 @@ sidebar_position: 2
 ---
 
 # Revisão e Validação do Estado Atual da DSD
+A plataforma permite validar o estado atual da DSD elaborada pelo utilizador. A ferramenta de validação notifica o utilizador acerca dos seguintes problemas:
+- Turmas sem um docente atribuído
+- Docentes sobrecarregados
 
-Documents are **groups of pages** connected through:
+![Validação DSD](./validar.png)
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+Esta validação pode ser feita a qualquer momento, clicando em **Validar** na *navbar* da aplicação. A função **validateDSD** faz um pedido *GET* onde recebe os docentes com horas superiores a um determinado limite (docentes sobrecarregados), apontando assim os seus nomes na *modal*. Esta função faz também um outro pedido *GET* onde recebe e guarda as turmas que não possuem nenhum docente.
 
-## Create your first Doc
-
-Create a Markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
+```bash
+<NavItem key='validar' onClick={validateDSD}>
+  Validar
+</NavItem>
 ```
