@@ -4,28 +4,38 @@ sidebar_position: 5
 
 # Exportar para Formatos Comuns
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+A plataforma DSD permite exportar o estado atual da DSD elaborada pelo utilizador nos seguintes formatos:
+- XLS (Excel)
+- CSV (Comma Separated Values)
+- JSON (Javascript Object Notation)
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+![Exportar DSD](./exportar.png)
 
-## Build your site
-
-Build your site **for production**:
-
-```bash
-npm run build
+De maneira semelhante à feature de Validar, também a exportação pode ser feita a qualquer momento, independentemente do estado da DSD, clicando no item **Exportar** na *navbar* da aplicação. É utilizada a função abaixo, onde recebe uma *string* que corresponde ao tipo de ficheiro de *output* pretendido e é feito um pedido *GET* à base de dados que envia o ficheiro escolhido, sendo, por fim, feito o download automático.
+```js
+const exportDSD = (type: string) => {
+    fetch(process.env.REACT_APP_API_URL + `/export?format=` + type, {
+        headers: {
+        accept: "application/octet-stream",
+        Authorization: `Bearer ${getWithExpiry("id_token")}`,
+    },
+        method: "GET"
+    })
+    .then((response) => response.blob())
+    .then((data) => fileDownload(data, `export.${type}`));
+}
 ```
 
-The static files are generated in the `build` folder.
+Em baixo são visíveis exemplos de ficheiros de *output*.
+- Excel
 
-## Deploy your site
+![DSD Excel](./excel.png)
 
-Test your production build locally:
+- CSV
 
-```bash
-npm run serve
-```
+![DSD CSV](./csv.png)
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+- JSON
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+![DSD JSON](./json.png)
+
