@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Documentação DSD`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentação do frontend da aplicação da DSD">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
