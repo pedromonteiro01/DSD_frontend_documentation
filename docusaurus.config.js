@@ -43,7 +43,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
