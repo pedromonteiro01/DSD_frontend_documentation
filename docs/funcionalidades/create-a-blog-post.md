@@ -8,7 +8,7 @@ A plataforma DSD permite alterar a sigla dos docentes inseridos pelo utilizador.
 
 ![Alterar Siglas](./alterar-siglas.png)
 
-A barra de pesquisa utilizada é um componente do PACO, que foi implementada da seguinte maneira
+A barra de pesquisa utilizada é um componente do PACO, onde a função **searchBarOnChange** recebe uma *string* que usa para filtrar pelos docentes existentes, mostrando apenas os que contém a *string* fornecida no nome. 
 ```bash
 <SearchBox
   borderColor=""
