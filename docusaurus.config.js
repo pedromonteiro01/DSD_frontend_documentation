@@ -68,7 +68,7 @@ const config = {
             position: 'left',
             label: 'Plataforma',
           },
-          {to: '/blog', label: 'Contactos', position: 'left'},
+          {to: '/blog', label: 'Equipa', position: 'left'},
           {
             href: 'https://www.ua.pt/',
             label: 'Universidade de Aveiro',
