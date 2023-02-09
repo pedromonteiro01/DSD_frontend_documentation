@@ -19,7 +19,7 @@ A barra de pesquisa utilizada é um componente do PACO, que foi implementada da 
 />
 ```
 
-Após a seleção da sigla a alterar aparece uma modal que permite fazer essa alteração, onde a função **hideModal** fecha a modal e afunção **changeModalVisibility** atribui os novos valores e de seguida fecha a modal. ChangeAcronymContent é também um componente implementado e representa o *card* com os dados.
+Após a seleção da sigla a alterar aparece uma *modal* que permite fazer essa alteração, onde a função **hideModal** fecha a *modal* e a função **changeModalVisibility** atribui os novos valores e de seguida fecha a *modal*. ChangeAcronymContent é um componente implementado e representa o *card* com os dados.
 ```bash
 <Modal changeModal={hideModal}>
   <ChangeAcronymContent
