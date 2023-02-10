@@ -2,21 +2,31 @@
 sidebar_position: 6
 ---
 
-# Ver Turmas Atribuídas a Cada Docente
+# Ver Turmas Atribuídas a Cada Docente e ver docentes atribuidos a cada UC
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+A plataforma disponibiliza a funcionalidade de visualizar a que turmas os docentes estão associados bem como os docentes associados a turmas de uma determinada unidade curricular.
 
-Docusaurus has **much more to offer**!
+![Homepage](./homepage_small.png)
 
+Esta secção é composta por dois tipos de células:
+- *MainCell/TeacherCell*: célula que contém as informações principais de um(a) UC/docente
+```bash
+<MainCell
+    key={v.ucID}
+    f1={v.ucAcronym}
+    f2={shortenUcName(v.ucName, 15)}
+    f3={v.regentAcronym}
+    f4={v.studentsEstimate}
+    f5={v.ucID}
+    onChildClick={handleChildClick} class={""}/>
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
-
-## What's next?
-
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+<TeacherCell
+    key={v[0].professorID}
+    class={v[0].professorTotalHours > 8 ? "main-teacher-cell-warning" : "main-teacher-cell"}
+    f1={v[0].professorAcronym}
+    f2={shortenTeacherName(v[0].professorName)}
+    f3={v[0].professorTotalHours + "H"}
+    f4={v[0].professorID}
+    onChildClick={handleChildClick}/>
+```
+- *Cell*: célula que representa a turma a que o docente está associado/o docente associado a uma turma de uma UC 

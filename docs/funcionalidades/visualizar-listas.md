@@ -4,7 +4,8 @@ sidebar_position: 4
 
 # Gerir listas de UCs e de docentes
 
-Esta funcionalidade permite ao utilizador gerir todas as informações centrais do Sistema de Distruibuição do Serviço Docente. Para tal, é necessário navegar para a página *Gestão*, onde esta secção será mostrada.
+Esta funcionalidade permite ao utilizador gerir todas as informações centrais do Sistema de Distruibuição do Serviço Docente. Para tal, é necessário navegar para a página *Gestão*, onde esta secção será mostrada.<br/> 
+A tabela apresentada é retirada de uma libraria externa, *ag-grid-react*, que auxilia a plataforma neste processo de mostrar as entradas na base de dados.
 
 ![Gestão](./gestao.png)
 

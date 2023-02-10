@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Visão Geral
 
+![Homepage](./funcionalidades/homepage.png)
+
 ## Âmbito e Objetivo
 
 O Sistema de Apoio à Distribuição do Serviço Docente é um projeto que tem como objetivo construir uma plataforma que facilite a realização de um processo complexo e demorado.
