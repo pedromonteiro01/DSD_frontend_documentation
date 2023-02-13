@@ -64,7 +64,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'visao-geral',
             position: 'left',
             label: 'Plataforma',
           },
