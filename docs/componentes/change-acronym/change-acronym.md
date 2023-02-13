@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Cartões com docentes
+# Cartões com Docentes
 
 A página em questão contém diversos docentes apresentados, sendo que o nome e a sigla de cada um se encontra dentro de um *card*.
 

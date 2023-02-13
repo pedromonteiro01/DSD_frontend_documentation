@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Modal para alterar siglas
+# Modal para Alterar Siglas
 
 Este componente encontra-se em diversas partes da plataforma mas neste caso, especificamente, é relativo á alteração da sigla de um docente.
 
