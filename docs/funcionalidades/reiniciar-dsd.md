@@ -4,11 +4,11 @@ sidebar_position: 7
 
 # Reiniciar DSD
 
-A plataforma, na secção de gestão, permite reiniciar a DSD, isto é, repôr o estado inicial, removendo professores, turmas e cadeiras criadas. Isto é possível clicando no botão **Reiniciar DSD**.
+A plataforma, na secção de gestão, permite reiniciar a DSD, isto é, repôr o estado inicial, removendo docentes, turmas, unidades curriculares e wishlists criadas. Isto é possível clicando no botão **Reiniciar DSD**.
 
 ![Reiniciar DSD](./reiniciar.png)
 
-Ao clicar no botão aparece uma modal que informa o utilizador dos dados a serem apagados e que após remover não é possível voltar atrás.
+Ao clicar no botão aparece uma modal que informa o utilizador dos dados a serem apagados e alerta que após remover não é possível voltar atrás.
 
 ![Modal Reiniciar DSD](./modal-reiniciar.png)
 
