@@ -9,4 +9,4 @@ Aqui é possível verificar a última atualização feita à documentação, sab
 | Versão | Data    | Descrição   | Colaborador(es) |
 | :---:   | :---: | :--- | :--- |
 | V1.0 | 13-02-2023   | Versão inicial   | Pedro Monteiro / Eduardo Fernandes|
-| V1.1 | 18-04-2023   | Adição novas funcionalidades   | Pedro Monteiro |
+| V1.1 | 18-04-2023   | Adição novas funcionalidades   | Pedro Monteiro / Eduardo Fernandes |
