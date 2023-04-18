@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Para além de adicionar ficheiros manualmente é também permitido adicionar dados a partir de um ficheiro CSV. Para isso é necessário escolher os dados que se prentendem inserir, docentes, turmas ou wishlists, e de seguida selecionar o ficheiro a partir do computador.
 
-![Choose File Button](./download.png)
+![Choose File Button](./file.png)
 
 Na imagem acima já foi selecionado o ficheiro **Docentes.csv**, pelo que, para finalizar a ação, é apenas necessário clicar em submeter.
 

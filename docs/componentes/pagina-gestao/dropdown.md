@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Dropdown
+# Secções
 
 Nesta página é possível ter uma visão geral dos dados presentes na plataforma, bem como adicionar novos dados, remover ou alterar os dados existentes.
 
-![Management Page](./management.png)
+![Management Page](./gestao.png)
 
 É permitido selecionar qual a vista que é mostrada, sendo possível observar:
 - Lista de Docentes

@@ -7,7 +7,7 @@ A plataforma permite validar o estado atual da DSD elaborada pelo utilizador. A 
 - Turmas sem um docente atribuído
 - Docentes sobrecarregados
 
-![Validação DSD](./validar.png)
+![Validação DSD](./aviso.png)
 
 Esta validação pode ser feita a qualquer momento, clicando em **Validar** na *navbar* da aplicação. A função **validateDSD** faz um pedido *GET* onde recebe os docentes com horas superiores a um determinado limite (docentes sobrecarregados), apontando assim os seus nomes na *modal*. Esta função faz também um outro pedido *GET* onde recebe e guarda as turmas que não possuem nenhum docente.
 
