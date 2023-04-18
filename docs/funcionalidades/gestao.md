@@ -17,4 +17,4 @@ Ao clicar no botão *Adicionar* é mostrado um *pop-up* com campos em branco ond
 - uma turma associada a uma UC;
 - ou informação acerca de um docente gostar/não gostar de lecionar uma determinada UC (*wishlist*).
 
-![Gestão](./adicionar.png)
+![Gestão](./modal-add-profs.png)
