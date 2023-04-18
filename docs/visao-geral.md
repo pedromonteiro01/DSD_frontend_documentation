@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Visão Geral
 
-![Homepage](./funcionalidades/homepage.png)
+![Homepage](./funcionalidades/main.png)
 
 ## Âmbito e Objetivo
 
@@ -34,19 +34,40 @@ cd DSD/project/backend/DsdApi/_DOCKER_CONFIGS/  # caminho para o docker-compose
 docker-compose up
 ```
 
-Devem ser adicionados os ficheiros com variáveis de ambiente seguintes. <br></br>
-- No caso do frontend, adicionar .env em DSD/project/frontend/.env
-```bash
-PORT=8080
-REACT_APP_API_URL="http://localhost:5000/v1"
-REACT_APP_WSO2_CLIENT_ID="secrethere"
-REACT_APP_WSO2_CLIENT_SECRET="secrethere"
-REACT_APP_WSO2_REDIRECT_URI="http://localhost"
+1. Adicionar o WSO2 clientSecret em **DSD/project/backend/appsettings.Development.json**:
+```
+"clientSecret": "putyoursecrethere"
 ```
 
-- Para o backend, adicionar .env em DSD/project/backend/DsdApi/.env
-```bash
-ASPNETCORE_ENVIRONMENT=Development
+2. Inicializar o projeto correndo os seguintes comandos no teerminal:
+
+```
+cd DSD/project
+docker-compose up
+```
+
+## Correr frontend e backend localmente para desenvolvimento rápido (Sem Docker)
+
+1. Inicialmente, instalar as tecnologias descritas mais abaixo
+2. Inicializar o Docker Container da Base de Dados:
+```
+cd DSD/project
+docker-compose up sqlserver
+```
+
+3. Fazer build e correr o API:
+```
+cd DSD/project/backend
+
+export ASPNETCORE_ENVIRONMENT=Development && export clientSecret=<REPLACEWITHSECRETHERE> && clear && dotnet clean DsdApi.csproj && dotnet build DsdApi.csproj && dotnet run
+```
+
+4. Instalar dependências e correr React:
+```
+cd DSD/project/frontend
+
+yarn install
+sudo yarn start # (sudo required to run on port 80)
 ```
 
 ### Tecnologias
